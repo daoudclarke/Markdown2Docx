@@ -6,5 +6,5 @@ Gem::Specification.new do |s|
   s.description = 'Creates a release doc from a template and markdown in a yaml file'
   s.authors     = ['Dave Arkell', 'Daoud Clarke']
   s.email       = 'daoud.clarke@gorkana.com'
-  s.files       = ['lib/releaseDocMarkdown.rb']
+  s.files       = ['lib/releaseDocMarkdown.rb','samples/release.yaml','samples/release.docx']
 end
