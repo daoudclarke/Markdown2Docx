@@ -3,6 +3,7 @@ require 'zip' # 'zip/zip' # rubyzip gem
 require 'nokogiri'
 require 'yaml'
 require 'dimensions'
+require 'kramdown'
 
 YAML::ENGINE.yamler = 'syck'
 
@@ -316,7 +317,6 @@ class ReleaseDocMarkdown
         # Ensure there is only one w:t node
         (element/'.//w:t').remove
 
-        require 'kramdown'
         value_html = Kramdown::Document.new(value).to_html
 
         html_doc = Nokogiri::HTML(value_html)
