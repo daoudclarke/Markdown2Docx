@@ -1,0 +1,36 @@
+# Release pack
+
+# Title page
+
+author: Dave Arkell
+project: Markdown to docx
+system_area: Ruby
+
+version_history:
+  - author: Dave Arkell
+    description: Initial version
+    version: 1
+    date: 26/09/2013
+  - author: Daoud Clarke
+    description: Remove company content
+    date: 22/10/2013
+
+# Overview
+
+release_overview: |+
+  This is a test paragraph.
+
+  \\
+  This is another paragraph.
+  * **Something bold** - nice
+  * **Something else** - also good
+
+  \\
+  Here is a link to [DuckDuckGo](https://duckduckgo.com)
+
+  \\
+  ### A Section Title
+
+  \\
+  ![printdata](release_pack/image2.jpeg)
+
