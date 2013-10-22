@@ -7,7 +7,7 @@ require 'kramdown'
 
 YAML::ENGINE.yamler = 'syck'
 
-class ReleaseDocMarkdown 
+class Markdown2Docx
   def self.open(path, &block)
     self.new(path, &block)
   end
@@ -44,8 +44,6 @@ class ReleaseDocMarkdown
     emus_width = px_width / dpi * emus_per_inch
     emus_height = px_height / dpi * emus_per_inch
     max_width = max_width_cm * emus_per_cm
-    #require 'pry'
-    #binding.pry
     if (emus_width > max_width)
       ratio = emus_height / emus_width
       emus_width = max_width
@@ -340,8 +338,8 @@ class ReleaseDocMarkdown
       jpeg_type = Nokogiri::XML::Node.new 'Default', types
       jpeg_type['Extension'] = 'jpeg'
       jpeg_type['ContentType'] = 'image/jeg'
-      default_types.last.add_next_sibling jpeg_type
-
+      #default_types.last.add_next_sibling jpeg_type
+      types.children[0].add_child jpeg_type
       @replace[xml_file] = types.serialize :save_with => 0
     end
 

@@ -7,7 +7,7 @@ Gem::Specification.new do |s|
   s.authors     = ['Dave Arkell', 'Daoud Clarke']
   s.email       = 'daoud.clarke@gmail.com'
   s.files       = ['lib/markdown2docx.rb','bin/md2docx','samples/release.yaml','samples/release.docx']
-  s.executables = ['bin/md2docx']
+  s.executables = ['md2docx']
   s.add_runtime_dependency 'dimensions'
   s.add_runtime_dependency 'rubyzip', '~> 1.0.0'
   s.add_runtime_dependency 'nokogiri'

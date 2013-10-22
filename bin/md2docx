@@ -3,3 +3,7 @@
 require 'markdown2docx'
 
 puts 'Running'
+
+m = Markdown2Docx.open ARGV[0]
+m.merge_yaml ARGV[1]
+m.save ARGV[2]
