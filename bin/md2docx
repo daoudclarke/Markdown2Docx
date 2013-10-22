@@ -1,0 +1,5 @@
+#!/usr/bin/env ruby
+
+require 'markdown2docx'
+
+puts 'Running'

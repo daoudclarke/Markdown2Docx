@@ -1,12 +1,13 @@
 Gem::Specification.new do |s|
-  s.name        = 'releaseDocMarkdown'
-  s.version     = '0.1.2'
+  s.name        = 'markdown2docx'
+  s.version     = '0.1.3'
   s.date        = '2013-10-07'
-  s.summary     = 'ReleaseDocMarkdown'
-  s.description = 'Creates a release doc from a template and markdown in a yaml file'
+  s.summary     = 'markdown2docx'
+  s.description = 'Combines markdown in a yaml file with a docx template'
   s.authors     = ['Dave Arkell', 'Daoud Clarke']
-  s.email       = 'daoud.clarke@gorkana.com'
-  s.files       = ['lib/releaseDocMarkdown.rb','samples/release.yaml','samples/release.docx']
+  s.email       = 'daoud.clarke@gmail.com'
+  s.files       = ['lib/markdown2docx.rb','bin/md2docx','samples/release.yaml','samples/release.docx']
+  s.executables = ['bin/md2docx']
   s.add_runtime_dependency 'dimensions'
   s.add_runtime_dependency 'rubyzip', '~> 1.0.0'
   s.add_runtime_dependency 'nokogiri'
