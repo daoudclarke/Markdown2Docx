@@ -22,7 +22,9 @@ w.save('release.docx')
 
 To install, from source, you'll need to create the gem file:
 
+```
 gem build markdown2docx.gemspec
 gem install markdown2docx
+```
 
 Look in samples to see a sample yaml file.
